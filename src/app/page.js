@@ -70,7 +70,10 @@ export default function Home() {
           </div>
           <CardChart />
         </div>
-        <PaymentsTable data={TableData} />
+        <div className="space-y-3">
+          <p className="text-black text-xl font-medium">Payments</p>
+          <PaymentsTable data={TableData} />
+        </div>{' '}
       </div>
     </DashboardLayout>
   )
